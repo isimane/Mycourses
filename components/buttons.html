@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <title>buttons</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                 theme: {
+                   extend: {
+                     // graayscale: {
+                     //     50: '50%',
+                    
+                     fontFamily: { 
+                           pop: ["Poppins", "sans-serif"], 
+                       },
+                     colors: { 
+                       green: "#3DCBB1", 
+                       red:"#C42A22",
+                       disabled:"#D9D9D9",
+                       black:"#313131",  
+                     },
+                   },
+                 },
+               };
+          </script>
+    </head>
+<body>
+ <!-- Buttons with Icons -->
+<div class="space-y-8 font-pop">
+    <h2 class="text-black mb-4">Button with Icon</h2>
+    <div class="space-y-4">
+      <!-- Row 1 -->
+      <div class="flex gap-4">
+        <!-- Enabled with icon -->
+        <button class="inline-flex items-center justify-center px-4 py-2 bg-green text-white rounded-xl hover:opacity-80 transition-colors">
+          <svg class="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="currentColor">
+            <circle cx="12" cy="12" r="10"/>
+          </svg>
+          Enabled
+        </button>
+  
+        <!-- Hover state with icon -->
+        <button class="inline-flex items-center justify-center px-4 py-2 bg-red text-white rounded-xl transition-colors">
+          <svg class="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="currentColor">
+            <circle cx="12" cy="12" r="10"/>
+          </svg>
+          Hover
+        </button>
+  
+        <!-- Enabled (gray) with icon -->
+        <button class="inline-flex items-center justify-center px-4 py-2 border border-black text-black rounded-xl hover:bg-black hover:text-white transition-colors">
+          <svg class="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="currentColor">
+            <circle cx="12" cy="12" r="10"/>
+          </svg>
+          Enabled
+        </button>
+  
+        <!-- Hover (gray) with icon -->
+        <button class="inline-flex items-center justify-center px-4 py-2 bg-black text-white rounded-xl transition-colors">
+          <svg class="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="currentColor">
+            <circle cx="12" cy="12" r="10"/>
+          </svg>
+          Hover
+        </button>
+  
+        <!-- Disabled with icon -->
+        <button class="inline-flex items-center justify-center px-4 py-2 bg-disabled text-black/50 rounded-xl cursor-not-allowed" disabled>
+          <svg class="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="currentColor">
+            <circle cx="12" cy="12" r="10"/>
+          </svg>
+          Disabled
+        </button>
+      </div>
+    </div>
+  
+    <section><!-- Regular Buttons (No Icons) -->
+                    <h2 class="text-black mb-4">Button (Desktop)</h2>
+                    <div class="space-y-4">
+                    <!-- Row 1 -->
+                    <div class="flex gap-4">
+                        <!-- Enabled -->
+                        <button class="px-4 py-2 bg-green text-white rounded-xl hover:opacity-80 transition-colors">
+                        Enabled
+                        </button>
+                
+                        <!-- Hover state -->
+                        <button class="px-4 py-2 bg-red text-white rounded-xl transition-colors">
+                        Hover
+                        </button>
+                
+                        <!-- Enabled (gray) -->
+                        <button class="px-4 py-2 border border-black text-black rounded-xl hover:bg-black hover:text-white transition-colors">
+                        Enabled
+                        </button>
+                
+                        <!-- Hover (gray) -->
+                        <button class="px-4 py-2 bg-black text-white rounded-xl transition-colors">
+                        Hover
+                        </button>
+                
+                        <!-- Disabled -->
+                        <button class="px-4 py-2 bg-disabled text-black/50 rounded-xl cursor-not-allowed" disabled>
+                        Disabled
+                        </button>
+                    </div>
+                    </div>
+
+                    <h2 class="text-black mb-4">Button (meduim)</h2>
+                    <div class="space-y-4">
+                    <!-- Row 1 -->
+                    <div class="flex gap-4">
+                        <!-- Enabled -->
+                        <button class="px-3 py-2 text-md bg-green text-white rounded-xl hover:opacity-80 transition-colors">
+                        Enabled
+                        </button>
+                
+                        <!-- Hover state -->
+                        <button class="px-3 py-2 text-md bg-red text-white rounded-xl transition-colors">
+                        Hover
+                        </button>
+                
+                        <!-- Enabled (gray) -->
+                        <button class="px-3 py-2 text-md border border-black text-black rounded-xl hover:bg-black hover:text-white transition-colors">
+                        Enabled
+                        </button>
+                
+                        <!-- Hover (gray) -->
+                        <button class="px-3 py-2 text-md bg-black text-white rounded-xl transition-colors">
+                        Hover
+                        </button>
+                
+                        <!-- Disabled -->
+                        <button class="px-3 py-2 text-md bg-disabled text-black/50 rounded-xl cursor-not-allowed" disabled>
+                        Disabled
+                        </button>
+                    </div>
+                    </div>
+
+                    <h2 class="text-black mb-4">Button (small)</h2>
+                    <div class="space-y-4">
+                    <!-- Row 1 -->
+                    <div class="flex gap-4">
+                        <!-- Enabled -->
+                        <button class="px-3 py-2 text-sm bg-green text-white rounded-xl hover:opacity-80 transition-colors">
+                        Enabled
+                        </button>
+                
+                        <!-- Hover state -->
+                        <button class="px-3 py-2 text-sm bg-red text-white rounded-xl transition-colors">
+                        Hover
+                        </button>
+                
+                        <!-- Enabled (gray) -->
+                        <button class="px-3 py-2 text-sm border border-black text-black rounded-xl hover:bg-black hover:text-white transition-colors">
+                        Enabled
+                        </button>
+                
+                        <!-- Hover (gray) -->
+                        <button class="px-3 py-2 text-sm bg-black text-white rounded-xl transition-colors">
+                        Hover
+                        </button>
+                
+                        <!-- Disabled -->
+                        <button class="px-3 py-2 text-sm bg-disabled text-black/50 rounded-xl cursor-not-allowed" disabled>
+                        Disabled
+                        </button>
+                    </div>
+                    </div>
+    </section>
+  
+    
+    <section>  <!-- Icon Only Buttons -->
+            <!-- DESKTOP     -->
+                    <h2 class="text-black mb-4">Icon Only (Desktop)</h2>
+                    <div class="space-y-4">
+                    <!-- Row 1 -->
+                    <div class="flex gap-4">
+                        <!-- Enabled icon only -->
+                        <button class="px-5 py-3 bg-green text-white rounded-xl hover:opacity-80 transition-colors">
+                        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                            <circle cx="12" cy="12" r="10"/>
+                        </svg>
+                        </button>
+                
+                        <!-- Hover state icon only -->
+                        <button class="px-5 py-3 bg-red text-white rounded-xl transition-colors">
+                        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                            <circle cx="12" cy="12" r="10"/>
+                        </svg>
+                        </button>
+                
+                        <!-- Enabled (gray) icon only -->
+                        <button class="px-5 py-3 border border-black text-black rounded-xl hover:bg-black hover:text-white transition-colors">
+                        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                            <circle cx="12" cy="12" r="10"/>
+                        </svg>
+                        </button>
+                
+                        <!-- Hover (gray) icon only -->
+                        <button class="px-5 py-3 bg-black text-white rounded-xl transition-colors">
+                        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                            <circle cx="12" cy="12" r="10"/>
+                        </svg>
+                        </button>
+                
+                        <!-- Disabled icon only -->
+                        <button class="px-5 py-3 bg-disabled text-black/50 rounded-xl cursor-not-allowed" disabled>
+                        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                            <circle cx="12" cy="12" r="10"/>
+                        </svg>
+                        </button>
+                    </div>
+                    </div>
+                <!-- MEDUIM -->
+                <h2 class="text-black mb-4">Icon Only (medium)</h2>
+                <div class="space-y-4">
+                <!-- Row 1 -->
+                <div class="flex gap-4">
+                    <!-- Enabled icon only -->
+                    <button class="px-4 py-3 bg-green text-white rounded-xl hover:opacity-80 transition-colors">
+                    <svg class="w-3 h-3" viewBox="0 0 24 24" fill="currentColor">
+                        <circle cx="12" cy="12" r="10"/>
+                    </svg>
+                    </button>
+            
+                    <!-- Hover state icon only -->
+                    <button class="px-4 py-3 bg-red text-white rounded-xl transition-colors">
+                    <svg class="w-3 h-3" viewBox="0 0 24 24" fill="currentColor">
+                        <circle cx="12" cy="12" r="10"/>
+                    </svg>
+                    </button>
+            
+                    <!-- Enabled (gray) icon only -->
+                    <button class="px-4 py-3 border border-black text-black rounded-xl hover:bg-black hover:text-white transition-colors">
+                    <svg class="w-3 h-3" viewBox="0 0 24 24" fill="currentColor">
+                        <circle cx="12" cy="12" r="10"/>
+                    </svg>
+                    </button>
+            
+                    <!-- Hover (gray) icon only -->
+                    <button class="px-4 py-3 bg-black text-white rounded-xl transition-colors">
+                    <svg class="w-3 h-3" viewBox="0 0 24 24" fill="currentColor">
+                        <circle cx="12" cy="12" r="10"/>
+                    </svg>
+                    </button>
+            
+                    <!-- Disabled icon only -->
+                    <button class="px-4 py-3 bg-disabled text-black/50 rounded-xl cursor-not-allowed" disabled>
+                    <svg class="w-3 h-3" viewBox="0 0 24 24" fill="currentColor">
+                        <circle cx="12" cy="12" r="10"/>
+                    </svg>
+                    </button>
+                </div>
+                </div>
+                <!-- Small -->
+                <h2 class="text-black mb-4">Icon Only (small)</h2>
+                <div class="space-y-4">
+                <!-- Row 1 -->
+                <div class="flex gap-4">
+                    <!-- Enabled icon only -->
+                    <button class="px-3 py-2 bg-green text-white rounded-xl hover:opacity-80 transition-colors">
+                    <svg class="w-2 h-2" viewBox="0 0 24 24" fill="currentColor">
+                        <circle cx="12" cy="12" r="10"/>
+                    </svg>
+                    </button>
+            
+                    <!-- Hover state icon only -->
+                    <button class="px-3 py-2 bg-red text-white rounded-xl transition-colors">
+                    <svg class="w-2 h-2" viewBox="0 0 24 24" fill="currentColor">
+                        <circle cx="12" cy="12" r="10"/>
+                    </svg>
+                    </button>
+            
+                    <!-- Enabled (gray) icon only -->
+                    <button class="px-3 py-2 border border-black text-black rounded-xl hover:bg-black hover:text-white transition-colors">
+                    <svg class="w-2 h-2" viewBox="0 0 24 24" fill="currentColor">
+                        <circle cx="12" cy="12" r="10"/>
+                    </svg>
+                    </button>
+            
+                    <!-- Hover (gray) icon only -->
+                    <button class="px-3 py-2 bg-black text-white rounded-xl transition-colors">
+                    <svg class="w-2 h-2" viewBox="0 0 24 24" fill="currentColor">
+                        <circle cx="12" cy="12" r="10"/>
+                    </svg>
+                    </button>
+            
+                    <!-- Disabled icon only -->
+                    <button class="px-3 py-2 bg-disabled text-black/50 rounded-xl cursor-not-allowed" disabled>
+                    <svg class="w-2 h-2" viewBox="0 0 24 24" fill="currentColor">
+                        <circle cx="12" cy="12" r="10"/>
+                    </svg>
+                    </button>
+                </div>
+                </div>
+    </section>
+</div>
+</body>
+</html>
