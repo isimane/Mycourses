@@ -22,81 +22,234 @@
                        green: "#3DCBB1", 
                       red:"#C42A22",
                        disabled:"#D9D9D9",
-                       black:"#313131",  
+                       black:"#313131",
+                       bg:"#F4F4F4"  
                      },
                    },
                  },
                };
           </script>
     </head>
-<body>
+<body class="bg-bg">
     <!-- Line Form Container -->
-<div class=" w-[90%] mx-auto font-pop">
+<main class=" w-[90%] mx-auto font-pop">
     <h1 class="text-2xl text-gray-500">Line Form</h1>
 
-  <section class="">
+  <section class="mt-5">
+
     <!-- Text Input Fields -->
-    <div class=" flex justify-between items-center">
+    <section class=" flex justify-between items-center">
+      
       <!-- Regular Input -->
-     <div>
-        <input type="text" placeholder="label" class="py-1 border-b border-gray-200 focus:border-green focus:outline-none">
-     </div>
-      <!-- Active Input -->
-      <div>
-        <label class="text-sm text-black">Label</label><br>
-        <input type="text" placeholder="Placeholder" class=" py-1 border-b border-green focus:outline-none" >
+        <div>
+            <input type="text" placeholder="label" class="py-1 border-b bg-transparent border-gray-200 focus:border-green focus:outline-none">
+        </div>
+          <!-- Active Input -->
+        <div>
+            <label class="text-sm text-black">Label</label><br>
+            <input type="text" placeholder="Placeholder" class="bg-transparent py-1 border-b border-green focus:outline-none" >
+        </div>
+      
+          <!-- Error Input -->
+        <div>
+            <label class="text-sm text-black">Label</label><br>
+            <input type="text" placeholder="Placeholder" class="bg-transparent  py-1 border-b border-red focus:outline-none">
+            <p class="text-xs text-red">Error message here!</p>
+        </div>
+
+        <!-- disabled -->
+        <div>
+          <label class="text-sm text-disabled">Label</label><br>
+          <input type="text" placeholder="Placeholder" class="text-disabled bg-transparent py-1 border-b border-disabled focus:outline-none placeholder:text-disabled" disabled>
       </div>
+    </section>
   
-      <!-- Error Input -->
-      <div>
-        <label class="text-sm text-black">Label</label><br>
-        <input type="text" placeholder="Placeholder" class="  py-1 border-b border-red focus:outline-none">
-        <p class="text-xs text-red">Error message here!</p>
-      </div>
-    </div>
+   
   
-    <!-- Search Input -->
-    <div class=" flex  items-center  px-2">
-      <input type="text" placeholder="Search for course" class="py-2 border border-gray rounded-md focus:border-green  outline-none">
-        <svg class="w-5 h-5 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-        </svg>
-    </div>
-</section>
-  
-    <!-- Calendar -->
+  </section>
+
+  <section class="flex space-x-20 mt-10">
+              <!-- Search Input -->
+                <div class="w-[40%] mt-20">
+                  <div class="relative">
+                    <input type="text" placeholder="Search for course" class="w-full py-2 px-4 rounded-lg focus:outline-none  text-gray ">
+                    <svg  xmlns="http://www.w3.org/2000/svg"  class="absolute right-3 top-1/2 -translate-y-1/2 h-5 w-5 text-black" fill="none"  viewBox="0 0 24 24"  stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+                  </div>
+                </div>
+              <!-- Calendar -->
+                  <div class="max-w-sm rounded-xl bg-white p-4 shadow-lg">
+                        
+                          <div class="mb-4 flex items-center justify-between">
+                            <button class="p-1 hover:bg-gray-100 rounded-full">
+                              <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M7.00002 0.705022C6.81319 0.51777 6.55954 0.412537 6.29502 0.412537C6.0305 0.412537 5.77685 0.51777 5.59002 0.705022L1.00002 5.29502C0.61002 5.68502 0.61002 6.31502 1.00002 6.70502L5.59002 11.295C5.98002 11.685 6.61002 11.685 7.00002 11.295C7.39002 10.905 7.39002 10.275 7.00002 9.88502L3.12002 5.99502L7.00002 2.11502C7.38002 1.72502 7.38002 1.08502 7.00002 0.705022Z" fill="#080E2F"/>
+                                  </svg>
+                                  
+                            </button>
+                            <h2 class="text-lg font-medium">Aug 2020</h2>
+                            <button class="p-1 hover:bg-gray-100 rounded-full">
+                              <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M1.00002 0.710632C0.61002 1.10063 0.61002 1.73063 1.00002 2.12063L4.88002 6.00063L1.00002 9.88063C0.61002 10.2706 0.61002 10.9006 1.00002 11.2906C1.39002 11.6806 2.02002 11.6806 2.41002 11.2906L7.00002 6.70063C7.39002 6.31063 7.39002 5.68063 7.00002 5.29063L2.41002 0.700632C2.03002 0.320632 1.39002 0.320632 1.00002 0.710632Z" fill="#080E2F"/>
+                                  </svg>
+                                  
+                            </button>
+                          </div>
+                          <div class="mb-2 grid grid-cols-7 gap-2 text-center">
+                            <div class="text-sm text-gray-500">Mon</div>
+                            <div class="text-sm text-gray-500">Tue</div>
+                            <div class="text-sm text-gray-500">Wed</div>
+                            <div class="text-sm text-gray-500">Thu</div>
+                            <div class="text-sm text-gray-500">Fri</div>
+                            <div class="text-sm text-gray-500">Sat</div>
+                            <div class="text-sm text-gray-500">Sun</div>
+                          </div>
+                        
+                          <div class="grid grid-cols-7 gap-2 text-sm">
+                            
+                            <div class="text-center text-gray-300">29</div>
+                            <div class="text-center text-gray-300">30</div>
+                            <div class="text-center text-gray-300">31</div>
+                            <div class="text-center text-gray-300">1</div>
+                            <div class="text-center text-gray-300">2</div>
+                            <div class="text-center text-gray-300">3</div>
+                            <div class="text-center text-gray-300">4</div>
+                            <div class="text-center text-gray-300">5</div>
+                            <div class="text-center text-gray-300">6</div>
+                            <div class="text-center text-gray-300">7</div>
+                            <div class="text-center text-gray-300">8</div>
+                            <div class="text-center text-gray-300">9</div>
+                            <div class="text-center text-black font font-bold">10</div>
+                            <div class="text-center text-gray-600">11</div>
+                            <div class="text-center text-gray-600">12</div>
+                            <div class="text-center text-gray-600">13</div>
+                            <div class="text-center p-1.5 bg-green text-white rounded-md">14</div>
+                            <div class="text-center text-gray-600">15</div>
+                            <div class="text-center text-gray-600">16</div>
+                            <div class="text-center text-gray-600">17</div>
+                            <div class="text-center text-gray-600">18</div>
+                            <div class="text-center text-gray-600">19</div>
+                            <div class="text-center text-gray-600">20</div>
+                            <div class="text-center text-gray-600">21</div>
+                            <div class="text-center text-gray-600">22</div>
+                            <div class="text-center text-gray-600">23</div>
+                            <div class="text-center text-gray-600">24</div>
+                            <div class="text-center text-gray-600">25</div>
+                            <div class="text-center text-gray-600">26</div>
+                            <div class="text-center text-gray-600">27</div>
+                            <div class="text-center text-gray-600">28</div>
+                            <div class="text-center text-gray-600">29</div>
+                            <div class="text-center text-gray-600">30</div>
+                        
+                          </div>
+                  </div>
+  </section> 
+   <section class="flex space-x-12 mt-5">
+            <!-- Option Buttons (DESKTOP)-->
+            <div class="">
+              <button class="w-52 py-3 px-2 flex text-lg justify-between items-center bg-white rounded-t-xl shadow-sm hover:shadow">
+                Option 1
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+              </button>
+              <button class="w-52 py-3 px-2 flex text-lg justify-between items-center bg-green text-white shadow-sm hover:shadow">
+                Option 2
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+              </button>
+              <button class="w-52 py-3 px-2 flex text-lg justify-between items-center bg-white rounded-b-xl shadow-sm hover:shadow">
+                Option 3
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+              </button>
+            </div>
+
+        <!-- Option Buttons (MEDIUM)-->
+              <div class="">
+                    <button class="w-44 py-3 px-2 flex text-md justify-between items-center bg-white rounded-t-xl shadow-sm hover:shadow">
+                      Option 1
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                      </svg>
+                    </button>
+                    <button class="w-44 py-3 px-2 flex text-md justify-between items-center bg-green text-white shadow-sm hover:shadow">
+                      Option 2
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                      </svg>
+                    </button>
+                    <button class="w-44 py-3 px-2 flex text-md justify-between items-center bg-white rounded-b-xl shadow-sm hover:shadow">
+                      Option 3
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                      </svg>
+                    </button>     
+              </div>
+          <!-- Option Buttons (SMALL)-->
+                    <div class="">
+                    <button class="w-40 py-3 px-2 flex text-sm justify-between items-center bg-white rounded-t-xl shadow-sm hover:shadow">
+                      Option 1
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                      </svg>
+                    </button>
+                    <button class="w-40 py-3 px-2 flex text-sm justify-between items-center bg-green text-white shadow-sm hover:shadow">
+                      Option 2
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                      </svg>
+                    </button>
+                    <button class="w-40 py-3 px-2 flex text-sm justify-between items-center bg-white rounded-b-xl shadow-sm hover:shadow">
+                      Option 3
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                      </svg>
+                    </button>     
+                    </div>
+                    <div class="flex flex-col space-y-3">
+                      <!-- Option Buttons with border (DESKTOP) -->
+                      <div class="flex gap-2">
+                        <button class="px-3 py-2 border border-black rounded-xl text-md">option</button>
+                        <button class="px-3 py-2 border border-green text-green rounded-xl text-md">option</button>
+                        <button class="px-3 py-2 border border-black bg-disabled rounded-xl text-md">option</button>
+                      </div>
+                      <div class="flex gap-2">
+                        <button class="px-3 py-2 border border-black rounded-xl text-sm ">option</button>
+                        <button class="px-3 py-2 border border-green text-green rounded-xl text-sm">option</button>
+                        <button class="px-3 py-2 border border-black bg-disabled rounded-xl text-sm">option</button>
+                      </div>
+              
+                      <!-- Radio Buttons -->
+                      <div>
+                        <div class="flex space-y-2 gap-2 items-center">
+                            <label class="flex items-center space-x-2">
+                              <input  type="radio"  name="options"  value="active" checked class="w-4 h-4 text-green-600 bg-gray-100 border-gray-300 focus:ring-green-500"/>
+                              <span class="text-sm font-medium text-gray-900">Active </span>
+                            </label>
+                          
+                            <label class="flex items-center space-x-2">
+                              <input type="radio" name="options" value="default" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500"/>
+                              <span class="text-sm font-medium text-gray-900">Default </span>
+                            </label>
+                          
+                            <label class="flex items-center space-x-2">
+                              <input  type="radio"  name="options"  value="disabled" disabled class="w-4 h-4 text-black bg-gray-100 border-gray-300 focus:ring-black cursor-not-allowed opacity-50"/>
+                              <span class="text-sm font-medium text-gray-500">Disabled </span>
+                            </label>
+                          </div>
+                    </div>
+   </section>
+       
+   
+   
+   
     
+    
+   
+
+  </main>
   
-    <!-- Option Buttons -->
-    <div class="space-y-4">
-      <!-- Option Group 1 -->
-      <div class="space-y-2">
-        <button class="w-full text-left px-4 py-2 hover:bg-gray-50 rounded flex items-center justify-between">
-          <span>Option 1</span>
-          <svg class="w-5 h-5 text-green" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-          </svg>
-        </button>
-        <button class="w-full text-left px-4 py-2 bg-green text-white rounded">Option 2</button>
-        <button class="w-full text-left px-4 py-2 hover:bg-gray-50 rounded">Option 3</button>
-      </div>
-  
-      <!-- Radio Buttons -->
-      <div class="flex gap-4">
-        <label class="flex items-center gap-2">
-          <input type="radio" name="option" class="w-4 h-4 text-green" checked>
-          <span>Option</span>
-        </label>
-        <label class="flex items-center gap-2">
-          <input type="radio" name="option" class="w-4 h-4 text-green">
-          <span>Option</span>
-        </label>
-        <label class="flex items-center gap-2">
-          <input type="radio" name="option" class="w-4 h-4 text-gray-300" disabled>
-          <span class="text-gray-300">Option</span>
-        </label>
-      </div>
-    </div>
-  </div>
 </body>
 </html>
