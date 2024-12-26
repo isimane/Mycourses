@@ -114,7 +114,7 @@
          </div> 
      </nav>
        <!-- phone -->
-     <nav class="container mx-auto md:hidden flex justify-between items-center">
+     <nav class="w-[90%] mx-auto md:hidden flex justify-between items-center pb-2 border-b-2 border-lightgrey border-opacity-20">
         <div class="flex items-center gap-2">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list dark:text-green" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
@@ -137,9 +137,9 @@
      </nav>
 
 
-     <main class="container mx-auto mt-[40px]">
+     <main class="mt-[40px] ">
         <!-- hero part -->
-        <section>
+        <section class="container mx-auto  hidden md:block">
             <div class="bg-hero bg-cover bg-center  bg-no-repeat rounded-lg px-[58px] pt-[78px] pb-[25px]">
                 <div class="md:w-[427px] lg:w-[420px] ">
                     <h1 class="text-[48px] text-white font-bold">Learn something new everyday.</h1>
@@ -165,9 +165,9 @@
         </section>
 
         <!-- filtering -->
-        <section class="mt-[40px]">
+        <section class="container mx-auto  mt-[40px] hidden md:block">
             <div class="gap-[8px] flex flex-wrap ">
-                <button class="px-[16px] py-[8px] border border-green text-green rounded-xl  hover:opacity-80 transition-colors">All Recommendation</button>
+                <button class="px-[16px] py-[8px] text-[12px] border border-green text-green rounded-xl  hover:opacity-80 transition-colors">All Recommendation</button>
                 <button class="px-[16px] py-[8px] border border-grey text-grey rounded-xl  hover:opacity-80 transition-colors">Adobe Illustrator</button>
                 <button class="px-[16px] py-[8px] border border-grey text-grey rounded-xl  hover:opacity-80 transition-colors">Adobe Photoshop</button>
                 <button class="px-[16px] py-[8px] border border-grey text-grey rounded-xl  hover:opacity-80 transition-colors ">UI Design</button>
@@ -178,8 +178,8 @@
             </div>
         </section>
 
-        <!-- based on your interest -->
-        <section class="mt-[40px]">
+        <!-- based on your interest cards -->
+        <section class="container mx-auto  mt-[40px] hidden md:block">
             <div class="space-y-[4px]">
                 <h2 class="font-bold text-[20px]">Base on Your interest</h2>
                 <p class="text-grey text-[16px]">We know the best things for You.  Top picks for You.</p>
@@ -287,8 +287,8 @@
 
         </section>
 
-        <!-- trending course -->
-        <section class="mt-[40px]">
+        <!-- trending course cards -->
+        <section class="container mx-auto  mt-[40px] hidden md:block">
             <div class="space-y-[4px]">
                 <h2 class="font-bold text-[20px]">Trending Course</h2>
                 <p class="text-grey text-[16px]">We know the best things for You.  Top picks for You.</p>
@@ -497,7 +497,7 @@
         </section>
 
         <!-- popular instructo -->
-         <section class="mt-[40px]">
+         <section class="container mx-auto  mt-[40px] hidden md:block">
             <div class="space-y-[4px]">
                 <h2 class="font-bold text-[20px]">Popular instructor</h2>
                 <p class="text-grey text-[16px]">We know the best things for You.  Top picks for You.</p>
@@ -536,11 +536,11 @@
          </section>
 
          <!-- discount -->
-         <section class="mt-[40px]">
+         <section class="container mx-auto  mt-[40px] hidden md:block">
             <div class="bg-[url('../images/Subheader.png')] w-full bg-cover bg-center h-[184px] rounded-3xl flex justify-between  items-center px-[20px]">
                 <div>
                     <h2 class="font-bold text-white text-[32px]">Get Amazing Discount </h2>
-                    <p class="text-white  text-opacity-60 text-[24px]">With our responsive themes and mobile and desktop apps</p>
+                    <p class="text-white  text-opacity-60 text-[24px] hidden lg:block">With our responsive themes and mobile and desktop apps</p>
                 </div>
                 
                 <div class="flex gap-2">
@@ -558,10 +558,210 @@
             </div>
          </section>
 
-     </main>
+         <!-- phone -->
+         <section class="mt-[40px] w-[90%] mx-auto md:hidden">
+            <div class="gap-[4px] flex flex-wrap justify-center">
+                <button class="px-[16px] py-[8px] border-b-4 border-green text-green rounded-md hover:opacity-80 transition-colors">All </button>
+                <button class="px-[16px] py-[8px] text-[12px]  text-grey rounded-xl  hover:opacity-80 transition-colors">Adobe Illustrator</button>
+                <button class="px-[16px] py-[8px] text-[12px]  text-grey rounded-xl  hover:opacity-80 transition-colors">Adobe Photoshop</button>
+                <button class="px-[16px] py-[8px] text-[12px]  text-grey rounded-xl  hover:opacity-80 transition-colors ">UI Design</button>
+                
+            </div>
+        </section>
+        <!-- hero section phone -->
+        <section>
+                <div class="bg-hero bg-cover bg-center  bg-no-repeat pl-[58px] pt-[78px] pb-[25px] md:hidden">
+                    <div class="md:w-[427px] lg:w-[420px] ">
+                        <h1 class="text-[16px] text-white font-bold">Learn something new everyday.</h1>
+                        <p class="text-white text-[8px] mt-5">Become professionals and ready to join the world.</p>
+                        <button class="px-4 mt-12 py-2 bg-none font-bold border border-white text-white  hover:opacity-80 transition-colors">Explore Photography
+                        </button>
+                    
+                    </div>
+                    <div class="flex text-white items-center md:pt-10 lg:pt-0 md:gap-[118px] lg:gap-[151px] justify-end">
+                        <div>
+                           <div>
+                                <p class="font-bold text-[10px]">Jessica Wong</p>
+                                <p class="text-[8px]">Photographer</p>
+                           </div> 
+                        </div>
+                    </div>
+                </div>
 
+                <!-- first section -->
+                <div class="w-[90%] mx-auto mt-[24px] md:hidden">
+                    <h2 class="font-bold text-[16px]">More from Kitani Studio</h2>
+                    <p class="text-[14px] text-grey">Top picks for You.</p>
+                </div>
+                <!-- cards -->
+                    <section class="grid grid-cols-2 gap-4 ml-[5%] mx-auto mt-[16px] md:hidden">
+                    <div class=" space-y-2">
+                        <!-- card1 -->
+                        <div class="bg-[url('../images/card1.png')] w-full bg-cover bg-center bg-no-repeat rounded-md p-[4px] h-[161px]">
+                            <div class="flex gap-2 p-[8px]">
+                                <button class="bg-green text-white text-[8px] font-bold rounded-md p-[4px]">Best Seller</button>
+                                <button class="bg-purple text-white text-[8px] font-bold rounded-md p-[4px]">20% OFF</button>
+                            </div>
+                        </div>
+                        <div >
+                            <h2 class="font-bold text-[12px]">VUE JS SCRATCH COURSE</h2>
+                            <span class="text-[10px] text-green flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person dark:text-grey" viewBox="0 0 16 16">
+                                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                            </svg>
+                            Kitani Studio
+                            </span>
+                        </div>
+                        <div class="">
+                            <p class="text-[8px]">More than 8yr Experience as Illustrator. Learn how to becoming professional Illustrator Now...</p>
+                            <span>⭐⭐⭐⭐⭐ (1.2K)</span><br>
+                            <span class="text-[16px] font-bold ">$24.92 </span><span class="text-[12px] text-grey line-through">$32.90</span>
+                        </div>
+                    </div>
+                    <!-- end of card 1 -->
+                    <!-- card2 -->
+                    <div class=" space-y-2">
+                        <div class="bg-[url('../images/card2.png')] w-full bg-cover bg-center bg-no-repeat rounded-md p-[4px] h-[161px]">
+                            <div class="flex gap-2 p-[8px]">
+                                <button class="bg-green text-white text-[8px] font-bold rounded-md p-[4px]">Best Seller</button>
+                                <button class="bg-purple text-white text-[8px] font-bold rounded-md p-[4px]">20% OFF</button>
+                            </div>
+                        </div>
+                        <div >
+                            <h2 class="font-bold text-[12px]">VUE JS SCRATCH COURSE</h2>
+                            <span class="text-[10px] text-green flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person dark:text-grey" viewBox="0 0 16 16">
+                                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                            </svg>
+                            Kitani Studio
+                            </span>
+                        </div>
+                        <div class="">
+                            <p class="text-[8px]">More than 8yr Experience as Illustrator. Learn how to becoming professional Illustrator Now...</p>
+                            <span>⭐⭐⭐⭐⭐ (1.2K)</span><br>
+                            <span class="text-[16px] font-bold ">$24.92 </span><span class="text-[12px] text-grey line-through">$32.90</span>
+                        </div>
+                        <!-- end of card2 -->
+                    </div>
+                    </section>
+                    <!-- second section -->
+                    <div class="w-[90%] mx-auto mt-[24px] md:hidden">
+                        <h2 class="font-bold text-[16px]">More from Kitani Studio</h2>
+                        <p class="text-[14px] text-grey">Top picks for You.</p>
+                    </div>
+                    <!-- cards -->
+                    <section class="grid grid-cols-2 gap-4 ml-[5%] mx-auto mt-[16px] md:hidden"">
+                        <div class=" space-y-2">
+                            <!-- card1 -->
+                            <div class="bg-[url('../images/card11.png')] w-full bg-cover bg-center bg-no-repeat rounded-md p-[4px] h-[161px]">
+                                <div class="flex gap-2 p-[8px]">
+                                    <button class="bg-green text-white text-[8px] font-bold rounded-md p-[4px]">Best Seller</button>
+                                    <button class="bg-purple text-white text-[8px] font-bold rounded-md p-[4px]">20% OFF</button>
+                                </div>
+                            </div>
+                            <div >
+                                <h2 class="font-bold text-[12px]">VUE JS SCRATCH COURSE</h2>
+                                <span class="text-[10px] text-green flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person dark:text-grey" viewBox="0 0 16 16">
+                                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                                </svg>
+                                Kitani Studio
+                                </span>
+                            </div>
+                            <div class="">
+                                <p class="text-[8px]">More than 8yr Experience as Illustrator. Learn how to becoming professional Illustrator Now...</p>
+                                <span>⭐⭐⭐⭐⭐ (1.2K)</span><br>
+                                <span class="text-[16px] font-bold ">$24.92 </span><span class="text-[12px] text-grey line-through">$32.90</span>
+                            </div>
+                        </div>
+                        <!-- end of card 1 -->
+                        <!-- card2 -->
+                        <div class=" space-y-2">
+                            <div class="bg-[url('../images/card2.png')] w-full bg-cover bg-center bg-no-repeat rounded-md p-[4px] h-[161px]">
+                                <div class="flex gap-2 p-[8px]">
+                                    <button class="bg-green text-white text-[8px] font-bold rounded-md p-[4px]">Best Seller</button>
+                                    <button class="bg-purple text-white text-[8px] font-bold rounded-md p-[4px]">20% OFF</button>
+                                </div>
+                            </div>
+                            <div >
+                                <h2 class="font-bold text-[12px]">VUE JS SCRATCH COURSE</h2>
+                                <span class="text-[10px] text-green flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person dark:text-grey" viewBox="0 0 16 16">
+                                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                                </svg>
+                                Kitani Studio
+                                </span>
+                            </div>
+                            <div class="">
+                                <p class="text-[8px]">More than 8yr Experience as Illustrator. Learn how to becoming professional Illustrator Now...</p>
+                                <span>⭐⭐⭐⭐⭐ (1.2K)</span><br>
+                                <span class="text-[16px] font-bold ">$24.92 </span><span class="text-[12px] text-grey line-through">$32.90</span>
+                            </div>
+                            <!-- end of card2 -->
+                        </div>
+                    </section>
+
+                    <!-- instructor -->
+                        <section class="ml-[5%]  mt-[40px]  md:hidden">
+                            <div class="space-y-[4px]">
+                                <h2 class="font-bold text-[20px]">Popular instructor</h2>
+                                <p class="text-grey text-[16px]">We know the best things for You.  Top picks for You.</p>
+                            </div>
+                            <!-- first one -->
+                            <div class="gap-[20px]  grid grid-cols-3   mt-[20px]">
+                                <div>   
+                                    <div class="bg-[url('../images/instructor.png')] w-full bg-cover bg-center h-[296px] rounded-md grid items-end">
+                                    </div>
+                                    <div class="text-center px-[10px] pb-[16px]">
+                                        <h2 class="text-[16px] font-bold text-dark">Alexander Bastan</h2>
+                                        <p class="text-[14px] text-dark">Expert Mobile Engineer</p>
+                                </div>
+                               </div>
+                                <!-- second one -->
+                                <div>
+                                    <div class="bg-[url('../images/instructor2.png')] w-full bg-cover bg-center h-[296px] rounded-md grid items-end"> 
+                                    </div>
+                                    <div class="text-center px-120px pb-[16px]">
+                                        <h2 class="text-[16px] font-bold text-dark">Labie Carthaline</h2>
+                                        <p class="text-[14px] text-dark">Marketing Specialist</p>
+                                    </div>
+                                </div>
+                                 <!-- third one -->
+                                 <div>
+                                        <div class="bg-[url('../images/instructor3.png')] w-full bg-cover bg-center h-[296px] rounded-md grid items-end">
+                                            
+                                        </div>
+                                        <div class="text-center px-[10px] pb-[16px]">
+                                            <h2 class="text-[16px] font-bold text-dark">Jonathan Doe</h2>
+                                            <p class="text-[14px] text-dark">Financial Strategiest</p>
+                                    </div>
+                                </div>
+                            </div>
+                    </section>
+                    <section class="md:hidden">
+                        <div class="bg-[url('../images/lastimage.png')] w-full bg-cover bg-center h-[286px] pt-[13px]">
+                           
+                            <div class="pl-[14px]">
+                                <h2 class="text-[12px] font-bold text-white">WEBINAR</h2>
+                                <p class="text-[8px] text-white">August 16, 2020</p>
+                            </div>
+                            <div class="pl-[14px]">
+                               <h2 class="font-bold text-[24px] pr-[150px] text-white pt-[37px]">Film Maker
+                                Skillset for
+                                Beginner.</h2>
+                                <p class="text-white text-[14px] pt-[8px]">Kitani Sarasvati</p> 
+                            </div>
+                            <button class="ml-[14px] px-4 mt-[38px]  py-2 bg-none font-bold border border-white text-white  hover:opacity-80 transition-colors">Get it now
+                            </button>
+    
+                        </div>
+                    </section>
+
+            </section>
+     </main>
+     
      <!-- Footerr -->
-     <footer class="bg-dark text-white mt-20">
+     <footer class="hidden md:block bg-dark text-white mt-20 ">
 
         <div class=" mx-auto  items-center p-3 container mx-auto ">
             <div class="flex flex gap-4 py-10 justify-between border-b border-lightgrey border-opacity-30">
