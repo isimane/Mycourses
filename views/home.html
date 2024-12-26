@@ -27,6 +27,7 @@
                         dark:"#1B1B1B",
                         lightgrey:"#A0A0A0",
                         grey:"#767676",
+                        purple:"#A04AE3",
                  },
                },
              },
@@ -166,12 +167,15 @@
 
         <!-- filtering -->
         <section class="mt-[40px]">
-            <div class="gap-[8px]">
-                <button class="px-4 py-2 border border-green text-green rounded-xl  hover:opacity-80 transition-colors">All Recommendation</button>
-                <button class="px-4 py-2 border border-grey text-grey rounded-xl  hover:opacity-80 transition-colors">Adobe Illustrator</button>
-                <button class="px-4 py-2 border border-grey text-grey rounded-xl  hover:opacity-80 transition-colors">Adobe Photoshop</button>
-                <button class="px-4 py-2 border border-grey text-grey rounded-xl  hover:opacity-80 transition-colors">UI Design</button>
-                <button class="px-4 py-2 border border-grey text-grey rounded-xl  hover:opacity-80 transition-colors">Web Programming</button>
+            <div class="gap-[8px] flex flex-wrap ">
+                <button class="px-[16px] py-[8px] border border-green text-green rounded-xl  hover:opacity-80 transition-colors">All Recommendation</button>
+                <button class="px-[16px] py-[8px] border border-grey text-grey rounded-xl  hover:opacity-80 transition-colors">Adobe Illustrator</button>
+                <button class="px-[16px] py-[8px] border border-grey text-grey rounded-xl  hover:opacity-80 transition-colors">Adobe Photoshop</button>
+                <button class="px-[16px] py-[8px] border border-grey text-grey rounded-xl  hover:opacity-80 transition-colors">UI Design</button>
+                <button class="px-[16px] py-[8px] border border-grey text-grey rounded-xl  hover:opacity-80 transition-colors">Web Programming</button>
+                <button class="px-[16px] py-[8px] border border-grey text-grey rounded-xl  hover:opacity-80 transition-colors">Mobile Programming</button>
+                <button class="px-[16px] py-[8px] border border-grey text-grey rounded-xl  hover:opacity-80 transition-colors">Backend Developpement</button>
+                <button class="px-[16px] py-[8px] border border-grey text-grey rounded-xl  hover:opacity-80 transition-colors">Vue JS</button>
             </div>
         </section>
 
@@ -183,11 +187,15 @@
             </div>
 
             <!-- cards -->
-           <div class="grid grid-col-3">
+           <div class="grid md:grid-cols-3 lg:grid-cols-4">
             <!-- first -->
-                <div class="bg-[url('../images/')]">
-                    
+                <div class="bg-[url('../images/card1.png')] bg-cover bg-center bg-no-repeat rounded-lg p-[4px] w-[285px] h-[161px]">
+                    <div class="flex gap-2 p-[8px]">
+                        <button class="bg-green text-white text-[8px] font-bold rounded-xl p-2">Best Seller</button>
+                        <button class="bg-purple text-white text-[8px] font-bold rounded-xl p-2">20% OFF</button>
+                    </div>
                 </div>
+                
             <!-- second -->
                 <div>
 
